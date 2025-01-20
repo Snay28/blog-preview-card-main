@@ -1,0 +1,112 @@
+
+/* Stylos Globales */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /* Truco para Box-Model parte 1. */
+
+    /* Para que ocupe toda la pagina. */
+    height: 100%;
+    width: 100%;
+}
+
+
+*, *:before, *:after {
+    box-sizing: inherit; /* Truco para Box-Model parte 2. */
+}
+
+body {
+    font-size: 16px;
+    font-family: "Krub", serif;
+    background-color: hsl(47, 88%, 63%);
+
+    /* Para que se ocupe todo el espacio disponible. */
+    height: 100%;
+    width: 100%;
+}
+
+.sombra {
+    -webkit-box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
+    box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
+    border-radius: 1.5rem;
+}
+
+
+/* Contenedores. */
+.contenedor-principal {
+    /* Reglas y valore para central el .contenedor-principal-2 
+    en el centro de la pagina. */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 3rem;
+}
+
+@media (min-width: 480px) {
+    .contenedor-principal {
+        padding: 0;
+    }
+}
+
+.contenedor-principal-2 {
+    max-width: 38rem;
+    background-color: white;
+    border-radius: 1.5rem;
+    border: 0.1rem solid black;
+    padding: 2rem;
+}
+
+
+/* Contenido del contenedor-principal-2. */
+.contenedor-principal-2 .img-principal {
+    width: 100%;
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.contenedor-boton .boton{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: black;
+    text-decoration: none;
+    background-color: hsl(47, 88%, 63%);
+    font-weight: bold;
+}
+
+.contenedor-boton .boton:hover {
+    background-color: black;
+    color: white;
+}
+
+.titulo {
+    font-size: 2.3rem;
+    color: hsl(47, 88%, 63%);
+}
+
+.contenedor-avatar {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1.5rem;
+}
+
+
+/* Reconocimientos */
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
